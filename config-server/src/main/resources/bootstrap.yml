@@ -1,0 +1,13 @@
+server:
+  port: 8888
+management:
+  server:
+    ssl:
+      enabled: false  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: ${GIT_URL}
+          clone-on-start: true
