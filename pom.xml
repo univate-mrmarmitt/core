@@ -17,6 +17,7 @@
 
 	<modules>
 		<module>config-server</module>
+		<module>leilao-api</module>
 	</modules>
 
   <properties>
@@ -25,10 +26,25 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		
 		<lombok.version>1.18.12</lombok.version>
+
+		<spring-boot-starter-web.version>2.3.2.RELEASE</spring-boot-starter-web.version>
+		<spring-boot-starter-actuator.version>2.3.2.RELEASE</spring-boot-starter-actuator.version>
   </properties>
 
 	<dependencies>
 	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring-boot-starter-web.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>${spring-boot-starter-actuator.version}</version>
+		</dependency>
+
 	  <dependency>
 	  	<groupId>org.projectlombok</groupId>
 	  	<artifactId>lombok</artifactId>
