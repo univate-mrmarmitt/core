@@ -19,5 +19,5 @@ jobs:
       with:
         java-version: 11
 
-    - name: Testing app
-      run: cd .. mvn clean test
+    - name: Testing app      
+      run: mvn clean test
