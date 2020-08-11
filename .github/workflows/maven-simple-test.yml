@@ -20,4 +20,4 @@ jobs:
         java-version: 11
 
     - name: Testing app
-      run: mvn clean test
+      run: cd .. mvn clean test
