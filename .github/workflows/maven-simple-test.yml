@@ -1,0 +1,23 @@
+name: simple maven test
+
+on:
+  push:
+    branches: 
+      - master
+      - develop
+      - feature/*
+
+jobs:
+  test:
+    name: Running units tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+      
+    - name: Testing app            
+      run: mvn clean test -f /home/runner/work/mrmarmitt-api/pom.xml
