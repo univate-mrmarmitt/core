@@ -1,3 +1,0 @@
-[submodule "config-server"]
-	path = config-server
-	url = ./config-server/
