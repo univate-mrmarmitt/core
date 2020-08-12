@@ -19,5 +19,10 @@ jobs:
       with:
         java-version: 11
 
+    - name: list folder /home/runner/work/mrmarmitt-api/
+      run: ls -la /home/runner/work/mrmarmitt-api/
+    - name: list folder /home/runner/work/mrmarmitt-api/mrmarmitt-api
+      run: ls -la /home/runner/work/mrmarmitt-api/mrmarmitt-api
+      
     - name: Testing app            
       run: mvn clean test -f /home/runner/work/mrmarmitt-api/pom.xml
