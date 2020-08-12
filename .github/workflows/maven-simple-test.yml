@@ -20,4 +20,4 @@ jobs:
         java-version: 11
       
     - name: Testing app            
-      run: mvn clean test -f /home/runner/work/mrmarmitt-api/pom.xml
+      run: mvn clean test 
