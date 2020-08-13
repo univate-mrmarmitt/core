@@ -15,6 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: run ls
+      run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/
+
     - name: Checkout submodule
       uses: actions/checkout@v2
       with:
