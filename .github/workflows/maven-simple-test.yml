@@ -17,6 +17,10 @@ jobs:
 
     - name: run ls
       run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/
+    - name: run ls config-server
+      run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/config-server
+    - name: run ls leilao-api
+      run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/leilao-api
 
     - name: Checkout submodule
       uses: actions/checkout@v2
