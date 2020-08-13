@@ -17,9 +17,9 @@ jobs:
 
     - name: run ls
       run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/
-    - name: run ls config-server
+    - name: git status config-server
       run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/config-server
-    - name: run ls leilao-api
+    - name: git status leilao-api
       run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/leilao-api
 
     - name: Checkout submodule
