@@ -15,17 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
+        token: 40fa4cdfdc58f645ed023f91eecc13028e1d8411
         submodules: recursive
-
-    - name: run ls
-      run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/
-    - name: git status config-server
-      run: git status /home/runner/work/mrmarmitt-api/mrmarmitt-api/config-server
-    - name: git status config-server
-      run: git status /home/runner/work/mrmarmitt-api/mrmarmitt-api/config-server      
-    - name: git status leilao-api
-      run: git status /home/runner/work/mrmarmitt-api/mrmarmitt-api/leilao-api
-
 
     - name: Set up JDK 11
       uses: actions/setup-java@v1
