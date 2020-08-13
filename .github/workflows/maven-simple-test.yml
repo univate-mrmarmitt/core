@@ -18,9 +18,9 @@ jobs:
     - name: run ls
       run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/
     - name: git status config-server
-      run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/config-server
+      run: git status /home/runner/work/mrmarmitt-api/mrmarmitt-api/config-server
     - name: git status leilao-api
-      run: ls /home/runner/work/mrmarmitt-api/mrmarmitt-api/leilao-api
+      run: git status /home/runner/work/mrmarmitt-api/mrmarmitt-api/leilao-api
 
     - name: Checkout submodule
       uses: actions/checkout@v2
