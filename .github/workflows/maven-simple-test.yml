@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: ${{ secrets.SUB-MODULE-TOKEN }}
+        token: 40fa4cdfdc58f645ed023f91eecc13028e1d8411
         submodules: recursive
 
     - name: Set up JDK 11
