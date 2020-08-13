@@ -17,7 +17,7 @@ jobs:
     - name: Checkout submodule
       uses: actions/checkout@v2.0.0
       with:
-        repository: skalowsky/config-server
+        path: ./config-server
         ref: 'master'
 
     - uses: actions/checkout@v2
