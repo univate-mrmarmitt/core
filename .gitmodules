@@ -1,6 +1,6 @@
-[submodule "config-server"]
-	path = config-server
-	url = https://github.com/skalowsky/config-server.git
 [submodule "leilao-api"]
 	path = leilao-api
 	url = https://github.com/skalowsky/leilao-api.git
+[submodule "config-server"]
+	path = config-server
+	url = https://github.com/skalowsky/config-server.git
