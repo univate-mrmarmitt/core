@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: leilao-api
-  profiles:
-    active: development
-  cloud:
-    config:
-      uri: http://localhost:8888
