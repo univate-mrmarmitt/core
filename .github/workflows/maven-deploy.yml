@@ -20,8 +20,7 @@ jobs:
         java-version: 11
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         server-username: MAVEN_USERNAME
-        server-password: MAVEN_PASSWORD
-        gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
+        server-password: MAVEN_PASSWORD        
         gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
   
 
