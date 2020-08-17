@@ -23,6 +23,9 @@ jobs:
         server-password: MAVEN_PASSWORD               
         gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
           
+    - name: Listing kyes
+      run: gpg --list-secret-keys
+
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
