@@ -39,6 +39,6 @@ jobs:
         MAVEN_USERNAME: mrmarmitt
         MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
         MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
-        
+        GPG_TTY: $(tty)
         
         
