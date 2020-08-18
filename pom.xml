@@ -17,6 +17,7 @@
 	</parent>
 
   <properties>
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
@@ -123,8 +124,10 @@
 						<configuration>
 							<!-- Prevent `gpg` from using pinentry programs -->
 							<gpgArguments>
-								<arg>--pinentry-mode</arg>
-								<arg>loopback</arg>
+									<arg>${maven.deploy.pinentry-mode}</arg>
+									<arg>${maven.deploy.loopback}</arg>
+								<!--<arg>- -pinentry-mode</arg> -->
+								<!--<arg>loopback</arg> -->
 							</gpgArguments>
 						</configuration>			
 					</execution>
@@ -143,6 +146,7 @@
 				</configuration>
 			</plugin>			
 
+			
 		</plugins>
 	</build>
 

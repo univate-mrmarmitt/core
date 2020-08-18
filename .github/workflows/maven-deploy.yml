@@ -27,7 +27,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy
+      run: mvn deploy -Dmaven.deploy.pinentry-mode=--pinentry-mode -Dmaven.deploy.loopback=loopback
       env:
         MAVEN_USERNAME: mrmarmitt
         MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
