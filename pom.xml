@@ -126,8 +126,6 @@
 							<gpgArguments>
 									<arg>${maven.deploy.pinentry-mode}</arg>
 									<arg>${maven.deploy.loopback}</arg>
-								<!--<arg>- -pinentry-mode</arg> -->
-								<!--<arg>loopback</arg> -->
 							</gpgArguments>
 						</configuration>			
 					</execution>
@@ -145,8 +143,6 @@
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>			
-
-			
 		</plugins>
 	</build>
 
