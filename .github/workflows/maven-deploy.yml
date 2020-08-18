@@ -4,9 +4,8 @@
 name: Maven Package
 
 on:
-  push:
-    branches: 
-      - deploy-test
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -24,12 +23,6 @@ jobs:
         gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
         gpg-passphrase: MAVEN_GPG_PASSPHRASE 
           
-    - name: cat settings.xml
-      run: cat /home/runner/.m2/settings.xml
-                  
-    - name: Listing kyes
-      run: gpg --list-secret-keys
-
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
