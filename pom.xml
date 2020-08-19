@@ -10,7 +10,7 @@
   <packaging>pom</packaging>
 
 	<scm>
-    <developerConnection>scm:git:https://github.com/skalowsky/config-server</developerConnection>
+    <developerConnection>scm:git:https://github.com/skalowsky/config-server.git</developerConnection>
     <tag>parent-0.1.0</tag>
   </scm>
 
