@@ -4,14 +4,10 @@
 
   <groupId>com.github.skalowsky</groupId>
   <artifactId>parent</artifactId>
-  <version>0.1.0</version>
+  <version>0.0.001-SNAPSHOT</version>
 	<name>parent</name>
 	<url>https://github.com/skalowsky/core</url>
   <packaging>pom</packaging>
-
-	<scm>
-    <developerConnection>scm:svn:https://github.com/skalowsky/config-server</developerConnection>
-  </scm>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -136,16 +132,15 @@
 				</executions>
 			</plugin>
 
-
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
 				<configuration>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<useReleaseProfile>false</useReleaseProfile>
-					<releaseProfiles>release</releaseProfiles>
-					<goals>deploy</goals>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>			
 		</plugins>
