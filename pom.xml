@@ -4,7 +4,7 @@
 
   <groupId>com.github.skalowsky</groupId>
   <artifactId>parent</artifactId>
-  <version>0.1.1-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
 	<name>parent</name>
 	<url>https://github.com/skalowsky/core</url>
   <packaging>pom</packaging>
