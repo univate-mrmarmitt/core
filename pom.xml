@@ -4,7 +4,7 @@
 
 	<groupId>com.github.skalowsky</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>0.1.1</version>
 	<packaging>pom</packaging>
 	<name>parent</name>
 	<description>escrever depois</description>
@@ -22,7 +22,7 @@
 		<connection>scm:git:git@github.com:skalowsky/core.git</connection>
 		<developerConnection>scm:git:git@github.com:skalowsky/core.git</developerConnection>
 		<url>https://github.com/skalowsky/core/tree/master</url>
-		<tag>parent-0.1.0</tag>
+		<tag>parent-0.1.1</tag>
 	</scm>
 
 	<parent>
