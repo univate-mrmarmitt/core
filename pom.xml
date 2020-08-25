@@ -3,13 +3,11 @@
 <modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.skalowsky</groupId>
-	<artifactId>parent</artifactId>
-	<version>0.1.2-SNAPSHOT</version>
+	<artifactId>skalowsky-starter-pom-parent</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>parent</name>
-	<description>escrever depois</description>
+	<name>skalowsky-starter-parent</name>
 	<url>https://github.com/skalowsky/core</url>
-	<inceptionYear>2020</inceptionYear>
 
 	<licenses>
 		<license>
@@ -18,6 +16,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
 	<scm>
 		<connection>scm:git:git@github.com:skalowsky/core.git</connection>
 		<developerConnection>scm:git:git@github.com:skalowsky/core.git</developerConnection>
@@ -32,6 +31,10 @@
 		<relativePath />
 	</parent>
 
+	<modules>
+		<module>skalowsky-starter-rest-api</module>
+	</modules>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.target>11</maven.compiler.target>
@@ -44,11 +47,27 @@
 		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
 	</properties>
 
+<!--
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId></groupId>
+				<artifactId></artifactId>
+				<version></version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+-->
+
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
 
 	<build>
