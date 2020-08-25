@@ -33,6 +33,7 @@
 
 	<modules>
 		<module>skalowsky-starter-rest-api</module>
+		<module>skalowsky-starter-config-server</module>
 	</modules>
 
 	<properties>
@@ -142,6 +143,13 @@
 								<goals>
 									<goal>sign</goal>
 								</goals>
+								<configuration>
+									<!-- Prevent `gpg` from using pinentry programs -->
+									<gpgArguments>
+										<arg>${maven.deploy.pinentry-mode}</arg>
+										<arg>${maven.deploy.loopback}</arg>
+									</gpgArguments>
+								</configuration>								
 							</execution>
 						</executions>
 					</plugin>
