@@ -29,3 +29,4 @@ You should add to the .m2/setings.xml the following tags to be able to download 
     </snapshots>
 </repository>
 ```
+ 
