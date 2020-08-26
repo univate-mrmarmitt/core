@@ -8,10 +8,10 @@ This project is a base pom to use as a parent to skalowsky projects.
 ### Using pom
 ```html
   <parent>
-		<groupId>com.github.skalowsky</groupId>
-		<artifactId>skalowsky-starter-config-server</artifactId>
-		<version>0.1.0-SNAPSHOT</version>
-		<relativePath/>
+    <groupId>com.github.skalowsky</groupId>
+    <artifactId>skalowsky-starter-config-server</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <relativePath/>
   </parent>
 ```
 ## Maven snapshot repository
