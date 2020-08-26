@@ -1,1 +1,1 @@
-![example branch parameter](https://github.com/actions/hello-world/workflows/Greet%20Everyone/badge.svg?branch=feature-1)
+![example workflow name](https://github.com/skalowsky/core/workflows/maven-deploy-snapshot/badge.svg?branch=develop)(https://github.com/skalowsky/core/actions)
