@@ -1,1 +1,1 @@
-# mrmarmitt-api
+![example workflow name](https://github.com/skalowsky/core/workflows/maven-deploy-snapshot/badge.svg)
