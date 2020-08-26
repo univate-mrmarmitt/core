@@ -1,1 +1,1 @@
-![example workflow name](https://github.com/skalowsky/core/workflows/maven-deploy-snapshot/badge.svg)
+![example workflow name](https://github.com/skalowsky/core/workflows/maven-deploy-snapshot/badge.svg?branch=develop)(https://github.com/skalowsky/core/actions)

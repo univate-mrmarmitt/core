@@ -1,4 +1,4 @@
-name: simple maven test
+name: maven-deploy-snapshot
 
 on:
   push:
